@@ -9,7 +9,6 @@ const int FPS = 60;
 const int DELAY_TIME = 1000.0f / FPS;
 
 int main(int argc, char** argv)
-
 {
 	if (SDLSingleton::GetInstance()->InitSystem() == false)
 		assert(0);
@@ -71,8 +70,6 @@ int main(int argc, char** argv)
 			SDL_Delay((int)(DELAY_TIME - frameTime));
 		}
 	}
-
-	
 
 	return 0;
 }
