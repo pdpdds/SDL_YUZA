@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{72d4d44e-6aa3-43e0-b6d9-ce6a1199fbef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\data.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lighting.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\menu.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\midi.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opl3.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\options.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\replay.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screenshot.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg000.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg001.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg002.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg003.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg004.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg005.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg006.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg007.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg008.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seg009.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seqtbl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stb_vorbis.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GPLv3.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opl3.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\types.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
