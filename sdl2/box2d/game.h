@@ -1,6 +1,6 @@
 #pragma once
 //SDL2
-#include <SDL.h>
+#include <SDL2/SDL.h>
 //Game Includes
 #include "box.h"
 #include "tile.h"

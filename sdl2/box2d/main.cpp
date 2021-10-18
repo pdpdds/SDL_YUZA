@@ -1,13 +1,11 @@
 ﻿#include <iostream>
 #include <sstream>
-#include <SDL.h>
+#include <SDL2/SDL.h>
 #include <stdlib.h>
-#include <sprintf.h>
-#include <systemcall_impl.h>
 #include "PolygonShape.h"
 
-#include <SDL.h>
-#include <SDL2_gfxPrimitives.h>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL2_gfxPrimitives.h>
 #include <Box2D/Box2D.h>
 
 #define float32 float

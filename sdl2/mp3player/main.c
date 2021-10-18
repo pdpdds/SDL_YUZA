@@ -112,8 +112,6 @@ int main(int argc, char* argv[])
 	int running = 1;
 	//END   INIT
 
-	SDL_ShowSimpleMessageBox(0, "SDFSDFFDSSDF", "dsFDSFFSDSDF", Window);
-
 	//BEGIN MAIN LOOP
 	while (running) {
 		//BEGIN EVENT LOOP
