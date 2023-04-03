@@ -20,7 +20,7 @@ void initLevel(int n)
 					
 
 
-	// Pour l'instant testé jusko 21
+	// Pour l'instant test?jusko 21
 	// n=21;
 
 	if (n==1)
