@@ -1,5 +1,5 @@
 #include <SDL2/SDL.h>
-#include <SDL2/SDL_collide.h>
+#include <SDL_collide.h>
 
 /*if this header is not supported on your system comment out
 the assert function call in SDL_TransparentPixel*/
