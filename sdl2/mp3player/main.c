@@ -258,7 +258,7 @@ SDL_bool PointInCircle(SDL_Point* point, SDL_Rect* square)
 
 void assets_in(void)
 {
-	Music = Mix_LoadMUS("assets/snd/The.madpix.project_-_Wish_You_Were_Here.mp3");
+	Music = Mix_LoadMUS("assets/snd/Wish_You_Were_Here.mp3");
 
 	//BEGIN BG
 	temp_surface = IMG_Load("./assets/gfx/bg.png");

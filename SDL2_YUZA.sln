@@ -25,8 +25,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "box2d", "sdl2\box2d\test_bo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mp3player", "sdl2\mp3player\mp3player.vcxproj", "{DA69E614-4030-4041-9333-02FDCB8B1C34}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pang", "sdl2\pang\pang.vcxproj", "{754D1308-9DFA-4DA1-B81E-65A34A524A2B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		DEBUG_WIN32_DLL|x86 = DEBUG_WIN32_DLL|x86
@@ -123,14 +121,6 @@ Global
 		{DA69E614-4030-4041-9333-02FDCB8B1C34}.Debug|x86.Build.0 = Debug|Win32
 		{DA69E614-4030-4041-9333-02FDCB8B1C34}.Release|x86.ActiveCfg = Release|Win32
 		{DA69E614-4030-4041-9333-02FDCB8B1C34}.Release|x86.Build.0 = Release|Win32
-		{754D1308-9DFA-4DA1-B81E-65A34A524A2B}.DEBUG_WIN32_DLL|x86.ActiveCfg = Debug|Win32
-		{754D1308-9DFA-4DA1-B81E-65A34A524A2B}.DEBUG_WIN32_DLL|x86.Build.0 = Debug|Win32
-		{754D1308-9DFA-4DA1-B81E-65A34A524A2B}.DEBUG_WIN32|x86.ActiveCfg = Debug|Win32
-		{754D1308-9DFA-4DA1-B81E-65A34A524A2B}.DEBUG_WIN32|x86.Build.0 = Debug|Win32
-		{754D1308-9DFA-4DA1-B81E-65A34A524A2B}.Debug|x86.ActiveCfg = Debug|Win32
-		{754D1308-9DFA-4DA1-B81E-65A34A524A2B}.Debug|x86.Build.0 = Debug|Win32
-		{754D1308-9DFA-4DA1-B81E-65A34A524A2B}.Release|x86.ActiveCfg = Release|Win32
-		{754D1308-9DFA-4DA1-B81E-65A34A524A2B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

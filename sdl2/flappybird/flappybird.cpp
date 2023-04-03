@@ -493,7 +493,7 @@ bool loadMedia()
 	}
 
 	//Load background texture
-	if( !gBGTexture.loadFromFile( "flappybg.jpg" ) )
+ 	if( !gBGTexture.loadFromFile( "flappybg.jpg" ) )
 	{
 		printf( "Failed to load background texture!\n" );
 		success = false;
@@ -578,8 +578,8 @@ int main( int argc, char* args[] )
 					//Move the bird
 					bird.move(loseFlag);
 
-					if (checkCollision(pipe1, bird) == true || checkCollision(pipe2, bird) == true || checkCollision(pipe3, bird) == true)
-						loseFlag = 1;
+					//if (checkCollision(pipe1, bird) == true || checkCollision(pipe2, bird) == true || checkCollision(pipe3, bird) == true)
+						//loseFlag = 1;
 
 					//Scroll background
 					scrollingOffset -= speed;
