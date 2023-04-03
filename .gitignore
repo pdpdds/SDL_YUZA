@@ -36,3 +36,5 @@
 /.vs
 /resources
 /x64
+Release
+Release-sdl2
