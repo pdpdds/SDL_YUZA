@@ -1384,7 +1384,7 @@ void draw_image_with_blending(image_type far* image, int xpos, int ypos) {
 	}
 }
 
-#define print_setting_value(setting, value) print_setting_value_(setting, value, alloca(32), 32)
+#define print_setting_value(setting, value) print_setting_value_(setting, value, malloc(32), 32)
 char* print_setting_value_(setting_type* setting, int value, char* buffer, size_t buffer_size) {
 	bool has_name = false;
 	names_list_type* list = setting->names_list;

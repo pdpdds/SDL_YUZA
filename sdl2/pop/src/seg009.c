@@ -1945,7 +1945,7 @@ void ogg_callback(void *userdata, Uint8 *stream, int len) {
 		// If sound is off: Mute the sound, but keep track of where we are.
 		memset(stream, digi_audiospec->silence, len);
 		// Let the decoder run normally (to advance the position), but discard the result.
-		byte* discarded_samples = alloca(len);
+		byte* discarded_samples = malloc(len);
 		samples_filled = stb_vorbis_get_samples_short_interleaved(ogg_decoder, output_channels,
 																  (short*) discarded_samples, len / sizeof(short));
 	}
@@ -2435,11 +2435,20 @@ void __pascal far set_gr_mode(byte grmode) {
 #ifdef SDL_HINT_WINDOWS_DISABLE_THREAD_NAMING
 	SDL_SetHint(SDL_HINT_WINDOWS_DISABLE_THREAD_NAMING, "1");
 #endif
+
+#ifdef _WIN32
 	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER | SDL_INIT_NOPARACHUTE |
 	             SDL_INIT_GAMECONTROLLER | SDL_INIT_HAPTIC ) != 0) {
 		sdlperror("set_gr_mode: SDL_Init");
 		quit(1);
 	}
+#else
+	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER) != 0)
+	{
+		sdlperror("SDL_Init");
+		quit(1);
+	}
+#endif
 
 	//SDL_EnableUNICODE(1); //deprecated
 	Uint32 flags = 0;
@@ -2480,7 +2489,11 @@ void __pascal far set_gr_mode(byte grmode) {
 #else
 	const Uint32 RENDER_BACKEND = SDL_RENDERER_SOFTWARE;
 #endif
+#if defined(SKYOS32)
+	renderer_ = SDL_CreateRenderer(window_, -1, 0);
+#else
 	renderer_ = SDL_CreateRenderer(window_, -1 , RENDER_BACKEND | SDL_RENDERER_TARGETTEXTURE);
+#endif
 	SDL_RendererInfo renderer_info;
 	if (SDL_GetRendererInfo(renderer_, &renderer_info) == 0) {
 		if (renderer_info.flags & SDL_RENDERER_TARGETTEXTURE) {
@@ -2773,15 +2786,13 @@ void load_from_opendats_metadata(int resource_id, const char* extension, FILE** 
 			}
 
 			if (fp != NULL) {
-				struct stat buf;
-				if (fstat(fileno(fp), &buf) == 0) {
-					*result = data_directory;
-					*size = buf.st_size;
-				} else {
-					perror(image_filename);
-					fclose(fp);
-					fp = NULL;
-				}
+
+				fseek(fp, 0, SEEK_END);
+				size_t file_length = ftell(fp);
+				fseek(fp, 0, SEEK_SET);
+
+				*size = file_length;
+				*result = data_directory;
 			}
 		}
 	}

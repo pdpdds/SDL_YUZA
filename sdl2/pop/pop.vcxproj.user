@@ -5,8 +5,9 @@
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEBUG_WIN32|Win32'">
-    <LocalDebuggerWorkingDirectory>../Debug</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerWorkingDirectory>$(YUZA_ROOT)/bin</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand>$(YUZA_ROOT)/bin/yuza.exe</LocalDebuggerCommand>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEBUG_WIN32_DLL|Win32'">
     <LocalDebuggerWorkingDirectory>../Debug</LocalDebuggerWorkingDirectory>

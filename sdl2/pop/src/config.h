@@ -68,7 +68,7 @@ The authors of this program may be contacted at https://forum.princed.org
 #ifdef USE_QUICKSAVE // Replay relies on quicksave, because the replay file begins with a quicksave of the initial state.
 
 // Enable recording/replay feature.
-#define USE_REPLAY
+//#define USE_REPLAY
 
 #endif
 

@@ -644,7 +644,7 @@ byte *Render_text_Win32(const char *str, int font_number, int size, int antialia
     s.cy = 32;
   }
 
-  bi = (BITMAPINFO*)_alloca(sizeof(BITMAPINFOHEADER) + sizeof(RGBQUAD) * 256);
+  bi = (BITMAPINFO*)malloc(sizeof(BITMAPINFOHEADER) + sizeof(RGBQUAD) * 256);
   memset(bi, 0, sizeof(BITMAPINFOHEADER) + sizeof(RGBQUAD) * 256);
   bi->bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
 	bi->bmiHeader.biWidth = (s.cx + 3) & ~3;
