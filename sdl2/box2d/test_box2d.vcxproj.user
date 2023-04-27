@@ -4,11 +4,7 @@
     <LocalDebuggerWorkingDirectory>$(SolutionDir)/resources/box2d</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEBUG_WIN32|Win32'">
-    <LocalDebuggerWorkingDirectory>../Debug</LocalDebuggerWorkingDirectory>
-    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DEBUG_WIN32_DLL|Win32'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SKYOS|Win32'">
     <LocalDebuggerWorkingDirectory>../Debug</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
